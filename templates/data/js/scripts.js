@@ -15,6 +15,41 @@ $(window).on("load", function () {
 
 // document.addEventListener('DOMContentLoaded', updateControlsPosition);
 // window.addEventListener('resize', updateControlsPosition);
+const fixedHeader = () => {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const header = document.querySelector("#header");
+
+    if (scrollTop > 100) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}; 
+document.addEventListener("DOMContentLoaded", () => {
+    fixedHeader();
+});
+
+window.addEventListener("scroll", () => {
+    fixedHeader();
+});
+
+var lastScrollTop = 0;
+var delta = 200;
+
+$(window).scroll(function () {
+    var st = $(this).scrollTop();
+
+    if (Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    if (st > lastScrollTop) {
+        $('#header').addClass('hide');
+    } else {
+        $('#header').removeClass('hide');
+    }
+    lastScrollTop = st;
+});
+
 
 
 jQuery(document).ready(function ($) {
@@ -23,10 +58,11 @@ jQuery(document).ready(function ($) {
         slidesPerView: 1,
         spaceBetween: 0,
         loop: true,
-        // autoplayDisableOnInteraction: false,
-        // autoplay: {
-        //     delay: 6000,
-        // },
+        // speed: 1000,
+        autoplayDisableOnInteraction: false,
+        autoplay: {
+            delay: 6000,
+        },
         // breakpoints: {
         //     1920: {
         //         slidesPerView: 2,
@@ -60,6 +96,10 @@ jQuery(document).ready(function ($) {
                 slidesPerView: 4,
                 spaceBetween: 6.67,
                 initialSlide: 1,
+                autoplayDisableOnInteraction: false,
+                autoplay: {
+                    delay: 8000,
+                },
                 autoHeight: true,
                 loop: true,
                 navigation: {
