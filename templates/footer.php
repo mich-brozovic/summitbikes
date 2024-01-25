@@ -111,6 +111,19 @@
             </div>
         </div>
     </div>
+    <div class="credits">
+        <div class="container">
+            <div class="flex-holder">
+                <div class="copyright">
+                    <span>Copyright  © 2022 SummitBikes | Všechna práva vyhrazena.</span>
+                </div>
+                <div class="created-by">
+                    <a href="" class="shoptet">Vytvořil Shoptet</a>
+                    <a href="" class="miranda">MirandaMedia Group s.r.o.</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 

@@ -30,7 +30,11 @@
         <h2>Summit Bikes</h2>
         <ul class="index">
             <li><a href="template-main.php">Hlavní stránka</a></li>
-           
+            <li><a href="template-category.php">Kategorie</a></li>
+            <li><a href="template-product-detail.php">Detail produktu</a></li>
+            <li><a href="template-brands.php">Seznam značek</a></li>
+            <li><a href="template-blog.php">Blog</a></li>
+            <li><a href="template-blog-detail.php">Blog - detail</a></li>
         </ul>
     </div>
 </body>

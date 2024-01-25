@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="data/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="data/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="data/css/jquery-ui.css" rel="stylesheet" type="text/css">
     <link href="data/css/jquery-ui.structure.css" rel="stylesheet" type="text/css">
-    <link href="data/css/jquery-ui.theme.css" rel="stylesheet" type="text/css"> -->
+    <link href="data/css/jquery-ui.theme.css" rel="stylesheet" type="text/css">
     <link href="data/css/fonts.css" rel="stylesheet" type="text/css">
     <link href="data/css/styles.css" rel="stylesheet" type="text/css">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
