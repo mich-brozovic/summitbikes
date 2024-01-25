@@ -297,11 +297,14 @@ jQuery(document).ready(function ($) {
     $(document).on("click", "#detail-gallery .images-holder .img", function (e) {
         e.preventDefault();
         const t = $(this);
-        const scr = t.find("img").attr("src");
+        const imgSrc = t.find("img").attr("src");
         const gall = $("#detail-gallery");
-        gall.find(".selected-image").attr("src", scr);
-
+        
+        gall.find(".selected-image").attr("src", imgSrc);
+    
+        gall.find(".zoom").css("background-image", "url(" + imgSrc + ")");
     });
+    
     $(document).on("click", "#send-form", function (e) {
         if ($("input[name='size']").is(":checked")) {
             $('#size-error').css('display', 'none');
