@@ -19,7 +19,7 @@
         <div class="container">
             <div class="upper">
                 <img src="data/images/blog-detail-big.jpg" alt="" class="bg">
-                <img src="data/images/collab-4.svg" alt="" class="logo">
+                <img src="data/images/trek.svg" alt="" class="logo">
             </div>
             <div class="content">
                 <div class="title">
@@ -31,18 +31,30 @@
                     <p class="big">Pokud se alespoň částečně zajímáte o cyklistický sport, ať už jako fanoušek závodů například série Grand Tour či světového poháru horských kol nebo přímo aktivně v sedle, o značce TREK byste měli už jistě slyšet. Kola značky TREK představují špičku v oboru cyklistiky.</p>
                 </div>
                 <div class="all-content">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amte</li>
+                        <li>Lorem ispum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amte</li>
+                        <li>Lorem ispum dolor sit amet</li>
+                    </ul>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amte</li>
+                        <li>Lorem ispum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amte</li>
+                        <li>Lorem ispum dolor sit amet</li>
+                    </ol>
                     <p>V současné době společnost Trek zaměstnává přibližně 1800 pracovníků a kola této značky můžete zakoupit v tisících prodejnách v osmdesáti státech světa. <strong>Většinu kol tato americká firma vyrábí mimo Spojené státy, a to v zemích jako Nizozemsko , Německo, Tchaj-wan a Čína. </strong></p>
                     <div class="half-holder">
-                        <img src="" alt="">
+                        <img src="data/images/detail-img-1.jpg" alt="">
                         <p>
                             Něco málo z historie. Společnost Trek Bicycle vznikla v roce 1975. <strong> Byla založena Dickem Burkem a Bevilem Hoggem jako 100% dceřiná společnost společnosti Roth Corporation</strong>, která se zabývala distribucí spotřebičů. Společnost Trek Bicycle se v těchto letech zabývala výrobou ručně pájených rámů. V osmdesátých letech dochází k začátku výroby kompletních jízdních kol, a to jak silničních, tak horských. Velkou evolucí ve výrobě jsou nově používané materiály jako uhlíková vlákna či hliník. Později v této dekádě pak Trek přichází i s výrobou cyklistických doplňků.
                         </p>
                     </div>
-                    <p></p>
-                    <img src="" alt="">
+                    <p>Začátkem devadesátých let se pak začínají na trhu objevovat nám dobře známá kola vyrobená z karbonu. Během těchto let síla této značky neustále sílila a dostávala se do povědomí čím dál většímu počtu cyklistických nadšenců po celém světě. <strong>Významným milníkem byl pak rok 1997, kdy Trek začal spolupracovat s Lancem Armstongem</strong> , který o dva roky později vyhrál svou první Tour de France na kole této značky a stal se prvním Američanem, který vyhrál Tour v americkém týmu na americkém kole. Jak to však s Lancem dopadlo bohužel všichni víme. To je ale na jiný článek.</p>
+                    <img src="data/images/blog-inside.jpg" alt="">
                     <span class="img-description">Lorem ipsum Lance Armstrong vítěz lorem ipsum 1997</span>
-                    <p></p>
-                    <p></p>
+                    <p>V novém tisíciletí prestiž značky neustále roste. Za zmínku stojí zrod vyloženě dámských jízdních kol, která splňují nejpřísnější parametry, aby se kola mohla dokonale přizpůsobit ženské anatomii. Mezi léty 2000 a 2010 dochází k mnoha významným akvizicím, vstupu na čínský trh či tvorbě mezinárodních reklamních kampaní. V následujících letech si pak již společnost drží své místo na výsluní a patří k tomu nejlepšímu ve svém oboru.</p>
+                    <p>Cyklistické vybavení firma Trek vyrábí pod značkou Bontrager. Mezi značkové produkty Bontrager patří helmy, pláště, kola, řídítka, představce, sedlovky, sedla, elektronika, cyklistické oblečení a tretry či láhve na vodu.</p>
                     <div class="img-gall">
                         <img src="data/images/gall-1.jpg" alt="">
                         <img src="data/images/gall-2.jpg" alt="">
@@ -55,14 +67,16 @@
                     <p><strong>Jak jste si z výše uvedeného jistě všimli, společnost Trek není žádná „rychlokvaška“ ale firma s několika desítkami let zkušeností, během kterých postupně zdokonalovala svoje produkty, až do podoby, jaké známe dnes.</strong> Modelové řady horských kol MARLIN, X-CALIBRE, REMEDY, FUEL EX nebo silničních kol CHECKPOINT, MADONE, ÉMONDA, DOMANE patří k tomu nejlepšímu, co v současné době na českém trhu najdete. V široké nabídce modelů si vybere opravdu každý nezávisle na jeho tělesných dispozicích. Na své si přijdou jak milovníci silniční cyklistiky, tak fanoušci rychlé jízdy po lesních stezkách.</p>
                     <p>Kola jsou složena z těch nejlepších komponentů přímo dceřiné značky BONTRAGER nebo světových značek jako je <a href="">FOX</a>, <a href="">WTB</a>, <a href="">SHIMANO</a> apod.</p>
                     <div class="info-block">
-                        <p>Nesmíme zapomenout ani na jedinečné technologie vyvinuté samotnou společností. Mezi ty nejvýznamnější patří vývoj nejlehčího a zároveň nejtvrdšího karbonového rámu. Nejen že jsou rámy z tohoto materiálu velice lehké při zachování extrémní pevnosti a tuhosti, jde je také perfektně tvarovat, díky čemuž dochází k následné dokonalé aerodynamice samotného kola.</p>
+                        <p><strong>Nesmíme zapomenout ani na jedinečné technologie vyvinuté samotnou společností.</strong> Mezi ty nejvýznamnější patří vývoj nejlehčího a zároveň nejtvrdšího karbonového rámu. Nejen že jsou rámy z tohoto materiálu velice lehké při zachování extrémní pevnosti a tuhosti, jde je také perfektně tvarovat, díky čemuž dochází k následné dokonalé aerodynamice samotného kola.</p>
                     </div>
                     <p>Nesmíme však opomenout ani vývoj materiálu Alpha Aluminium. Hliníkové rámy a komponenty jsou v cyklistickém průmyslu samozřejmostí po většinu jeho historie, ale to neznamená, že neexistují mimořádné příležitosti k pokroku a dokonalosti. Díky materiálu Alpha Aluminium postavil Trek rámy, které jsou pevné, lehké a poskytují jízdní kvalitu, která konkuruje mnoha jejich karbonovým protějškům.</p>
                     <div class="img-gall-big">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <img src="data/images/gall-big-1.jpg" alt="">
+                        <div class="wrapper">
+                            <img src="data/images/gall-big-2.jpg" alt="">
+                            <img src="data/images/gall-big-3.jpg" alt="">
+                            <img src="data/images/gall-big-4.jpg" alt="">
+                        </div>
                     </div>
                     <p>Technologií vyvinula společnost Trek za léta na trhu několik desítek. Mezi další významné patří například aktivní brzdový čep, Re:aktiv tlumiče, které reagují na změny terénu rychleji než jakýkoli jiný tlumič na trhu či systém odpružení a tlumení vibrací IsoSpeed. </p>
                     <p>Ať už si kolo TREK koupíte v kamenné prodejně nebo přes internetový obchod, můžete vždy počítat s garancí dokonale složeného a seřízeného kola, s následným bezplatným servisem či s doživotní zárukou na rám.</p>
@@ -125,7 +139,7 @@
                 </a>
             </div>
             <div class="btn-block">
-                <a href="" class="btn full-dark"><span>Zobrazid další články</span></a>
+                <a href="" class="btn full-dark"><span>Zobrazit další články</span></a>
             </div>
         </div>
     </section>

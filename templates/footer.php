@@ -115,7 +115,7 @@
         <div class="container">
             <div class="flex-holder">
                 <div class="copyright">
-                    <span>Copyright  © 2022 SummitBikes | Všechna práva vyhrazena.</span>
+                    <span>Copyright  © 2024 SummitBikes | Všechna práva vyhrazena.</span>
                 </div>
                 <div class="created-by">
                     <a href="" class="shoptet">Vytvořil Shoptet</a>

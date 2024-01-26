@@ -201,22 +201,6 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    $(document).on("click", ".select-block .select-item", function (e) {
-        e.preventDefault();
-        const value = $(this).find('a').attr("data-slug");
-        const id = $(this).attr("id");
-        const text = $(this).find('a').text();
-
-        console.log(value);
-
-        const dropdown = $(this).closest(".sorting-section");
-        const activeSelect = dropdown.find('.select-item a');
-
-        // activeSelect.text(text);
-        const select = dropdown.find("select");
-        select.val(value).change();
-        activeSelect.addClass("active");
-    });
 
     $(document).ready(function () {
         const filter = $(document).find(".filtering-holder");
@@ -246,25 +230,33 @@ jQuery(document).ready(function ($) {
             });
         }
     });
-    $(document).on("click", "#less", function (e) {
+
+
+    $(document).on("click", ".less", function (e) {
         e.preventDefault();
-        let num = parseInt($("#count").attr("value"));
-        num = num - 1;
+        const q = $(this).parent();
+        const i = q.find(".number");
+
+        let num = parseInt(i.attr("value")); // Získání aktuální hodnoty a převedení na číslo
+        num = num - 1; // Zvýšení hodnoty o jedna
 
         if (num < 1) {
             num = 1;
         } else {
-            $("#count").attr("value", num);
+            i.attr("value", num);
         }
     });
-    $(document).on("click", "#more", function (e) {
+    $(document).on("click", ".more", function (e) {
         e.preventDefault();
-        let num = parseInt($("#count").attr("value"));
-        num = num + 1;
+        const q = $(this).parent();
+        const i = q.find(".number");
 
+        let num = parseInt(i.attr("value")); // Získání aktuální hodnoty a převedení na číslo
+        num = num + 1; // Zvýšení hodnoty o jedna
 
-        $("#count").attr("value", num);
+        i.attr("value", num);
     });
+
     // $(document).on("click", "#copy", function (e) {
     //     e.preventDefault();
     //     const text = $(this).text();
@@ -299,12 +291,12 @@ jQuery(document).ready(function ($) {
         const t = $(this);
         const imgSrc = t.find("img").attr("src");
         const gall = $("#detail-gallery");
-        
+
         gall.find(".selected-image").attr("src", imgSrc);
-    
+
         gall.find(".zoom").css("background-image", "url(" + imgSrc + ")");
     });
-    
+
     $(document).on("click", "#send-form", function (e) {
         if ($("input[name='size']").is(":checked")) {
             $('#size-error').css('display', 'none');
@@ -323,23 +315,76 @@ jQuery(document).ready(function ($) {
 
     $(document).on("click", ".switcher", function (e) {
         e.preventDefault();
-        var mainBlock = $(document).find(".descriptions");
-        var id = $(this).attr("id");
-        // var selected = mainBlock.find(".items");
-        var modules = $(document).find(".modules");
-        var content = $(document).find(".content-part");
+        const mainBlock = $(document).find(".descriptions");
+        const id = $(this).attr("id");
 
         $(this).closest('.switcher').siblings().removeClass('active');
         $(this).closest('.switcher').addClass('active');
 
         mainBlock.find(".content-part[data-target='" + id + "']").addClass("active").siblings().removeClass("active");
-        // var target = $(document).find(".content-part, .one");
-        // if ($(target).length > 0) {
-        //     $("html, body").animate({
-        //         scrollTop: $(target).offset().top - 150
-        //     }, 700);
-        // }
-        // var scroll_btn = $(document).find(".scroll_to_top");
-        // scroll_btn.addClass("active");
+
+    });
+    $(document).on("click", ".faq-switcher", function (e) {
+        e.preventDefault();
+        const mainBlock = $(this).closest(".faq");
+        const id = $(this).attr("id");
+
+        $(this).closest('.faq-switcher').siblings().removeClass('active');
+        $(this).closest('.faq-switcher').addClass('active');
+
+        mainBlock.find(".content-part[data-target='" + id + "']").addClass("active").siblings().removeClass("active");
+
+    });
+
+    $(document).on("click", ".faq-question", function (e) {
+        e.preventDefault();
+        const t = $(this);
+        const title = t.find(".title-block");
+        const content = t.find(".content-block");
+
+        title.toggleClass("active");
+        content.toggleClass("active");
+
+    });
+    $(document).on("click", ".more-products", function (e) {
+        e.preventDefault();
+        const t = $(this);
+        const main = t.closest(".flex-row");
+        const related = main.find(".related");
+
+        t.toggleClass("active");
+        related.toggleClass("active");
+    });
+
+    $(document).on("click", "#sale_code", function (e) {
+        e.preventDefault();
+        const l = $(this).parent();
+        const r = l.find(".row");
+
+        $(this).toggleClass("active");
+        r.toggleClass("active");
+    });
+    $(document).on("click", ".dropdown .active-select", function (e) {
+        const l = $(this).parent();
+        const s = l.find(".select-block");
+        s.toggleClass("active");
+        l.toggleClass("active")
+    });
+    $(document).on("click", ".dropdown .select-block .select-item", function (e) {
+        e.preventDefault();
+        let value = $(this).find('a').attr("data-slug");
+        let id = $(this).attr("id");
+        let text = $(this).find('a').html();
+
+
+
+        let dropdown = $(this).closest(".dropdown");
+        const s = dropdown.find(".select-block");
+        let activeSelect = dropdown.find('.active-select a');
+        s.removeClass("active");
+        dropdown.removeClass("active");
+        activeSelect.html(text);
+        let select = dropdown.find("select");
+        select.val(value).change();
     });
 });

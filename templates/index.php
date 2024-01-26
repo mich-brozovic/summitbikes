@@ -35,6 +35,10 @@
             <li><a href="template-brands.php">Seznam značek</a></li>
             <li><a href="template-blog.php">Blog</a></li>
             <li><a href="template-blog-detail.php">Blog - detail</a></li>
+            <li><a href="template-faq.php">Faq</a></li>
+            <li><a href="template-cart.php">Košík</a></li>
+            <li><a href="template-shipping.php">Doprava a platba</a></li>
+            <li><a href="template-checkout.php">Informace</a></li>
         </ul>
     </div>
 </body>

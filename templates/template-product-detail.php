@@ -84,7 +84,7 @@
                         </div>
                         <div class="form-holder sizes-holder-form">
                             <input class="input-btn" type="radio" value="size-xs" name="size" id="size-xs" required>
-                            <label class="radio-label" for="size-s">XS</label>
+                            <label class="radio-label" for="size-xs">XS</label>
                             <input class="input-btn" type="radio" value="size-s" name="size" id="size-s">
                             <label class="radio-label" for="size-s">S</label>
                             <input class="input-btn" type="radio" value="size-m" name="size" id="size-m">
