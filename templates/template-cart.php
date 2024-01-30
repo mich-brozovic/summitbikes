@@ -52,17 +52,20 @@
                             </div>
                             <div class="right">
                                 <span class="stock in">Skladem</span>
-                                <div class="quantity">
-                                    <div class="less" id="less"></div>
-                                    <input type="number" value="1" class="number" id="count" readonly />
-                                    <div class="more" id="more"></div>
+                                <div class="holder">
+                                    <div class="quantity">
+                                        <div class="less" id="less"></div>
+                                        <input type="number" value="1" class="number" id="count" readonly />
+                                        <div class="more" id="more"></div>
+                                    </div>
+                                    <span class="final">3000</span>
+                                    <span class="per-item">1500 /ks</span>
+                                    <div class="remove">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
                                 </div>
-                                <span class="final">3000</span>
-                                <span class="per-item">1500 /ks</span>
-                                <div class="remove">
-                                    <div></div>
-                                    <div></div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="related">
@@ -114,17 +117,20 @@
                             </div>
                             <div class="right">
                                 <span class="stock in">Skladem</span>
-                                <div class="quantity">
-                                    <div class="less" id="less"></div>
-                                    <input type="number" value="1" class="number" id="count" readonly />
-                                    <div class="more" id="more"></div>
+                                <div class="holder">
+                                    <div class="quantity">
+                                        <div class="less" id="less"></div>
+                                        <input type="number" value="1" class="number" id="count" readonly />
+                                        <div class="more" id="more"></div>
+                                    </div>
+                                    <span class="final">3000</span>
+                                    <span class="per-item">1500 /ks</span>
+                                    <div class="remove">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
                                 </div>
-                                <span class="final">3000</span>
-                                <span class="per-item">1500 /ks</span>
-                                <div class="remove">
-                                    <div></div>
-                                    <div></div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="related">
@@ -176,17 +182,20 @@
                             </div>
                             <div class="right">
                                 <span class="stock in">Skladem</span>
-                                <div class="quantity">
-                                    <div class="less" id="less"></div>
-                                    <input type="number" value="1" class="number" id="count" readonly />
-                                    <div class="more" id="more"></div>
+                                <div class="holder">
+                                    <div class="quantity">
+                                        <div class="less" id="less"></div>
+                                        <input type="number" value="1" class="number" id="count" readonly />
+                                        <div class="more" id="more"></div>
+                                    </div>
+                                    <span class="final">3000</span>
+                                    <span class="per-item">1500 /ks</span>
+                                    <div class="remove">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
                                 </div>
-                                <span class="final">3000</span>
-                                <span class="per-item">1500 /ks</span>
-                                <div class="remove">
-                                    <div></div>
-                                    <div></div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="related">

@@ -346,25 +346,22 @@
             </div>
         </div>
     </section>
-    <section class="single-banner">
+    <section class="chose-bike">
         <div class="container">
-            <div class="holder">
-                <img src="data/images/banner-big.jpg" alt="" class="bg">
+            <div class="flex-holder">
+                <img src="data/images/chose-bike.jpg" alt="">
                 <div class="text">
-                    <h2>Jak správně
-                        vybrat kolo</h2>
-                    <p>Ve 5 jednoduchých krocích zjistite jaké kolo by pro Vás bylo nejlepší v našem
-                        jednoduchém průvodci, lorem ipsum dolor sit amet.</p>
-                    <span><strong>V jakém terénu budete jezdit?</strong></span>
-                    <a href="" class="btn border-white"><span>spustit průvodce</span></a>
+                    <h2>Jak správně vybrat kolo</h2>
+                    <p>Ve 5 jednoduchých krocích zjistite jaké kolo by pro Vás bylo nejlepší v našem jednoduchém průvodci, lorem ipsum dolor sit amet.</p>
+                    <span class="w"><strong>V jakém terénu budete jezdit?</strong></span>
+                    <a href="" class="btn border-white"><span>Spustit průvodce</span></a>
                 </div>
-
             </div>
         </div>
     </section>
-    <section class="faq-form">
+    <section class="faq-form" style="background-image: url(./data/images/form-bg.jpg);">
         <div class="container">
-            <div class="flex-holder" style="background-image: url(./data/images/form-bg.jpg);">
+            <div class="flex-holder">
                 <h2 class="mid">Nenašli jste co ste hledali</h2>
                 <span>Nebojte se nám napsat <strong>odpovíme vam do 24 hodin</strong></span>
                 <form action="" class="custom-form">

@@ -47,7 +47,7 @@
                                     <a href="#" id="SK" data-slug="SK" class="itme-text"><img src="data/images/access-1.jpg" alt="">SK</a>
                                 </div>
                             </div>
-                            <select name="sorting" id="sorting-select">
+                            <select name="country" id="sorting-select">
                                 <option>CZ</option>
                                 <option>SK</option>
                             </select>
@@ -62,7 +62,7 @@
                                     <a href="#" id="SK" data-slug="SK" class="itme-text"><img src="data/images/flag-1.svg" alt="">SK</a>
                                 </div>
                             </div>
-                            <select name="sorting" id="sorting-select">
+                            <select name="currency" id="sorting-select">
                                 <option>CZ</option>
                                 <option>SK</option>
                             </select>

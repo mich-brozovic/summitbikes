@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
 });
 
 let lastScrollTop = 0;
-const delta = 200;
+const delta = 100;
 
 $(window).scroll(function () {
     const st = $(this).scrollTop();
@@ -59,10 +59,10 @@ jQuery(document).ready(function ($) {
         spaceBetween: 0,
         loop: true,
         // speed: 1000,
-        autoplayDisableOnInteraction: false,
-        autoplay: {
-            delay: 6000,
-        },
+        // autoplayDisableOnInteraction: false,
+        // autoplay: {
+        //     delay: 6000,
+        // },
         // breakpoints: {
         //     1920: {
         //         slidesPerView: 2,
@@ -93,12 +93,22 @@ jQuery(document).ready(function ($) {
 
             var swipers = new Swiper('.prod-' + i, {
                 // Set sliders parameters
-                slidesPerView: 4,
+                slidesPerView: 2,
                 spaceBetween: 6.67,
                 initialSlide: 1,
                 autoplayDisableOnInteraction: false,
                 autoplay: {
                     delay: 8000,
+                },
+                breakpoints: {
+                    1300: {
+                        slidesPerView: 4,
+                        spaceBetween: 6.67
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 6
+                    }
                 },
                 autoHeight: true,
                 loop: true,
@@ -230,6 +240,67 @@ jQuery(document).ready(function ($) {
             });
         }
     });
+    $(document).ready(function () {
+        const mostSelled = $(".products-wrapper .most-selled .grid-block");
+
+        if (mostSelled.length) {
+            const products = mostSelled.find(".product");
+            const hiddenProducts = products.slice(3);
+            hiddenProducts.hide();
+            const numberOfHiddenProducts = hiddenProducts.length;
+
+            let remainingHiddenProducts = numberOfHiddenProducts;
+
+            if (products.length <= 3) {
+                $("#show-more-most-selled").hide();
+            }
+
+            $("#show-more-most-selled").on("click", function (e) {
+                e.preventDefault();
+                const productsToShow = hiddenProducts.slice(0, 3);
+                productsToShow.show();
+
+                remainingHiddenProducts -= productsToShow.length;
+
+                if (remainingHiddenProducts <= 0) {
+                    $(this).hide();
+                }
+            });
+        }
+    });
+    $(document).ready(function () {
+        const mostSelled = $(".subcategory .grid-block");
+        const windowWidth = $(window).width();
+        const sub = $(document).find(".subcategory");
+        if (windowWidth <= 1300) {
+            if (mostSelled.length) {
+                const products = mostSelled.find(".block");
+                const btn = sub.find(".btn-holder");
+                const hiddenProducts = products.slice(5);
+                hiddenProducts.hide();
+                const numberOfHiddenProducts = hiddenProducts.length;
+
+                let remainingHiddenProducts = numberOfHiddenProducts;
+
+                if (products.length > 5) {
+                    btn.css('display', 'flex');
+                }
+
+                $("#show-sub-cat").on("click", function (e) {
+                    e.preventDefault();
+                    const productsToShow = hiddenProducts.slice(0, 5);
+                    productsToShow.show();
+
+                    remainingHiddenProducts -= productsToShow.length;
+
+                    if (remainingHiddenProducts <= 0) {
+                        $(this).hide();
+                    }
+                });
+            }
+        }
+    });
+
 
 
     $(document).on("click", ".less", function (e) {
@@ -365,6 +436,7 @@ jQuery(document).ready(function ($) {
         r.toggleClass("active");
     });
     $(document).on("click", ".dropdown .active-select", function (e) {
+        e.preventDefault();
         const l = $(this).parent();
         const s = l.find(".select-block");
         s.toggleClass("active");
@@ -387,4 +459,115 @@ jQuery(document).ready(function ($) {
         let select = dropdown.find("select");
         select.val(value).change();
     });
+
+
+    $("#company").change(function () {
+        if ($(this).is(":checked")) {
+            $(".company-hidden").addClass("active");
+        } else {
+            $(".company-hidden").removeClass("active");
+        }
+    });
+    $("#secondAddress").change(function () {
+        if ($(this).is(":checked")) {
+            $(".second-address").addClass("active");
+        } else {
+            $(".second-address").removeClass("active");
+        }
+    });
+    $("#note").change(function () {
+        if ($(this).is(":checked")) {
+            $(".message-block").addClass("active");
+        } else {
+            $(".message-block").removeClass("active");
+        }
+    });
+
+    $(document).ready(() => {
+        // Funkce pro nastavení výšky .img stejnou jako jejich šířka
+        const setHeightEqualToWidth = () => {
+            $('.product-item .img').each((index, element) => {
+                const width = $(element).width();
+                $(element).height(width);
+            });
+        };
+
+        // Inicializace výšky při načítání stránky
+        setHeightEqualToWidth();
+
+        // Reakce na změnu velikosti okna
+        $(window).on('resize', () => {
+            setHeightEqualToWidth();
+        });
+    });
+
+    $(document).on("click", ".hamburger", function (e) {
+        e.preventDefault();
+        $(".mobile-navigation").addClass("active");
+        $(".bg-nav").addClass("active");
+        $("html").addClass("remove")
+    });
+
+    $(document).on("click", "#close-header", function (e) {
+        e.preventDefault();
+        $(".mobile-navigation").removeClass("active");
+        $(".bg-nav").removeClass("active");
+        $("html").removeClass("remove")
+    });
+    $(document).on("click", ".bg-nav", function (e) {
+        e.preventDefault();
+        $(".mobile-navigation").removeClass("active");
+        $(".bg-nav").removeClass("active");
+        $("html").removeClass("remove")
+    });
+    $(document).keyup(function (e) {
+        if (e.key === "Escape") {
+            $(".mobile-navigation").removeClass("active");
+            $(".bg-nav").removeClass("active");
+            $("html").removeClass("remove");
+        }
+    });
+
+    $(document).on("click", "#categories-dropdownd", function (e) {
+        e.preventDefault();
+        const li = $(this).closest("li");
+        const ul = li.find("ul");
+        li.toggleClass("active");
+        ul.toggleClass("active");
+    });
+    $(document).on("click", ".dropdown", function (e) {
+
+        const m = $(this).find(".menu");
+        const s = $(this).find("span .arrow");
+        s.toggleClass("active");
+        m.toggleClass("active");
+    });
+
+
+    $('.fake-search').click(function (event) {
+        event.preventDefault();
+        const f = $(document).find("#search-form");
+        f.addClass("active");
+        $('#search-input').focus();
+        event.stopPropagation();
+    });
+    $(document).click(function (event) {
+        const formElement = $('#search-form');
+        if (!$(formElement).is(event.target) && $(formElement).has(event.target).length === 0) {
+            $(formElement).removeClass('active');
+        }
+    });
+
+    $(document).on("click", ".product-item", function (e) {
+        $(this).toggleClass("active");
+
+        const windowWidth = $(window).width();
+
+        if (windowWidth <= 480) {
+            const link = $(this).find('.btn').attr('href');
+
+            window.location.href = link;
+        }
+    });
+
 });

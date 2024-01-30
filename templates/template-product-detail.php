@@ -35,10 +35,16 @@
                         </div>
                         <div class="loading"><img src="data/images/loading.svg" alt=""></div>
                     </div>
-                    <div class="images-holder">
+                    <div class="images-holder" id="images-holder">
                         <div class="img">
                             <img src="data/images/detail-1.jpg" alt="">
                         </div>
+                        <div class="img"><img src="data/images/bike-1.jpg" alt=""></div>
+                        <div class="img"><img src="data/images/bike-2.jpg" alt=""></div>
+                        <div class="img"><img src="data/images/bike-3.jpg" alt=""></div>
+                        <div class="img"><img src="data/images/bike-1.jpg" alt=""></div>
+                        <div class="img"><img src="data/images/bike-2.jpg" alt=""></div>
+                        <div class="img"><img src="data/images/bike-3.jpg" alt=""></div>
                         <div class="img"><img src="data/images/bike-1.jpg" alt=""></div>
                         <div class="img"><img src="data/images/bike-2.jpg" alt=""></div>
                         <div class="img"><img src="data/images/bike-3.jpg" alt=""></div>

@@ -52,14 +52,118 @@
                         </div>
                         <div class="row tell">
                             <label for="phone">Telefon</label>
-                            
+
                             <input type="tel" id="phone" name="phone" placeholder="Number">
                         </div>
 
                     </div>
                     <div class="block">
                         <h3>Fakturační adresa</h3>
-                        
+                        <div class="row">
+                            <input type="checkbox" value="company" name="company" id="company">
+                            <label for="company">Nakupuji na firmu</label>
+                        </div>
+                        <div class="row">
+                            <label for="name">Ulice *</label>
+                            <input type="text" placeholder="Text" name="name" id="name" required>
+                        </div>
+                        <div class="row">
+                            <label for="homeNum">Číslo Domu *</label>
+                            <input type="text" placeholder="Text" name="homeNum" id="homeNum" required>
+                        </div>
+                        <div class="row">
+                            <label for="city">Město *</label>
+                            <input type="text" placeholder="Text" name="city" id="city" required>
+                        </div>
+                        <div class="row">
+                            <label for="PSC">PSČ *</label>
+                            <input type="text" placeholder="Text" name="PSC" id="PSC" required>
+                        </div>
+                        <div class="row">
+                            <label for="sorting">Země</label>
+                            <div class="dropdown country">
+                                <div class="active-select"><a href="#" id=""><img src="data/images/flag-1.svg" alt=""> Země doručení</a></div>
+                                <div class="select-block">
+                                    <div class="select-item">
+                                        <a href="#" id="CZ" data-slug="CZ" class="itme-text"><img src="data/images/flag-1.svg" alt="">česká republika</a>
+                                    </div>
+                                    <div class="select-item">
+                                        <a href="#" id="SK" data-slug="SK" class="itme-text"><img src="data/images/access-1.jpg" alt="">SK</a>
+                                    </div>
+                                </div>
+                                <select name="country" id="sorting-select">
+                                    <option>CZ</option>
+                                    <option>SK</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row company-hidden">
+                            <label for="IC">IČ</label>
+                            <input type="text" placeholder="Text" name="IC" id="IC" required>
+                        </div>
+                        <div class="row company-hidden">
+                            <label for="DIC">DIČ</label>
+                            <input type="text" placeholder="Text" name="DIC" id="DIC" required>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="row">
+                            <input type="checkbox" value="secondAddress" name="secondAddress" id="secondAddress">
+                            <label for="secondAddress">Doručit na jinou adresu</label>
+                        </div>
+                        <div class="row second-address">
+                            <label for="nameSecond">Ulice *</label>
+                            <input type="text" placeholder="Text" name="nameSecond" id="nameSecond" required>
+                        </div>
+                        <div class="row second-address">
+                            <label for="homeNumSecond">Číslo Domu *</label>
+                            <input type="text" placeholder="Text" name="homeNumSecond" id="homeNum" Second required>
+                        </div>
+                        <div class="row second-address">
+                            <label for="citySecond">Město *</label>
+                            <input type="text" placeholder="Text" name="citySecond" id="citySecond" required>
+                        </div>
+                        <div class="row second-address">
+                            <label for="PSCSecond">PSČ *</label>
+                            <input type="text" placeholder="Text" name="PSCSecond" id="PSCSecond" required>
+                        </div>
+                        <div class="row second-address">
+                            <label for="sorting">Země</label>
+                            <div class="dropdown country">
+                                <div class="active-select"><a href="#" id=""><img src="data/images/flag-1.svg" alt=""> Země doručení</a></div>
+                                <div class="select-block">
+                                    <div class="select-item">
+                                        <a href="#" id="CZ" data-slug="CZ" class="itme-text"><img src="data/images/flag-1.svg" alt="">česká republika</a>
+                                    </div>
+                                    <div class="select-item">
+                                        <a href="#" id="SK" data-slug="SK" class="itme-text"><img src="data/images/access-1.jpg" alt="">SK</a>
+                                    </div>
+                                </div>
+                                <select name="countrySecond" id="sorting-select">
+                                    <option>CZ</option>
+                                    <option>SK</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="row">
+                            <input type="checkbox" value="note" name="note" id="note">
+                            <label for="note">Zadat poznámku pro prodejce</label>
+                        </div>
+                        <div class="row message-block">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Text"></textarea>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="row">
+                            <input class="big" type="checkbox" value="newsletter" name="newsletter" id="newsletter">
+                            <label class="big" for="newsletter">Chci odebírat newslettery <span>(Určeno pro starší 16 let)</span></label>
+                        </div>
+                        <div class="row">
+                            <input class="big" type="checkbox" value="register" name="register" id="register">
+                            <label class="big" for="register">Chci se registrovat v e-shopu</label>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
