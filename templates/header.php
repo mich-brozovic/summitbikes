@@ -167,7 +167,7 @@
                                 <span class="active">CZ <img class="arrow" src="data/images/arrow-black-small.svg" alt=""></span>
 
                                 <div class="menu">
-                                    <a href="https://www.petcenter.cz/">EN</a>
+                                    <a href="#">EN</a>
                                     <a href="#">DE</a>
                                 </div>
                             </div>
