@@ -587,7 +587,7 @@ a {
 
 h2 {
     .t(0.3s);
-    max-width: 75%;
+
     .font-bold-montserrat();
     font-size: 3.2rem;
     line-height: 1.22em;
@@ -1519,7 +1519,25 @@ section {
         }
     }
 
-    &:hover {}
+    &:hover {
+        .compare {
+            svg {
+                path {
+                    fill: @white;
+                    stroke: @white;
+                }
+            }
+        }
+
+
+        .img {
+            .hover {
+                display: flex;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
 
     .compare {
         .t(0.4s);
@@ -1898,6 +1916,7 @@ section {
         padding-bottom: 100px;
 
         h2 {
+            max-width: 75%;
             margin-bottom: 45px;
         }
     }
@@ -2261,6 +2280,7 @@ section {
         padding-bottom: 100px;
 
         h2 {
+            max-width: 75%;
             margin-bottom: 40px;
         }
 
@@ -5984,6 +6004,7 @@ section {
                                 flex-wrap: nowrap;
 
                                 .final {
+                                    .t(0.3s);
                                     .font-bold-montserrat();
                                     font-size: 1.6rem;
                                     line-height: 1.5em;
@@ -5992,6 +6013,7 @@ section {
                                 }
 
                                 .stock {
+                                    .t(0.3s);
                                     .font-bold-montserrat();
                                     font-size: 1.6rem;
                                     line-height: 1.5em;
@@ -6003,6 +6025,7 @@ section {
                                 }
 
                                 .add {
+                                    .t(0.3s);
                                     background-color: @orange-1;
                                     padding: 9px;
 
@@ -6333,7 +6356,8 @@ section {
                         position: relative;
                         border: 1px solid @grey-7;
                         cursor: pointer;
-    z-index: 8;
+                        z-index: 8;
+
                         &:first-of-type {
                             z-index: 10;
                         }
