@@ -479,7 +479,11 @@ section {}
 }
 
 .breadcrumbs {
-    &.absolut {}
+    display: none;
+
+    &.absolut {
+        display: none;
+    }
 
     ul {
         li {
@@ -508,7 +512,17 @@ section {}
 
 .banners {
     &.second {
-        .banner {}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        .banner {
+            &:first-of-type {
+                margin-bottom: 30px;
+            }
+        }
     }
 
     .banner {
@@ -1003,15 +1017,72 @@ section {}
     }
 
     .subcategory {
+        padding-bottom: 60px;
+
         .title-holder {
-            .bg {}
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+
+            .bg {
+                display: none;
+            }
+
+            .min {
+                display: flex;
+                width: 100vw;
+                height: 320px;
+                object-fit: cover;
+
+            }
 
             .text-block {
-                .mark {}
+                position: relative;
+                top: unset;
+                width: unset;
+                left: unset;
+                transform: unset;
+                bottom: unset;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                background-color: transparent;
+                padding: 44px 0px;
+
+                &::before {
+                    content: "";
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100vw;
+                    height: 100%;
+                    display: block;
+                    position: absolute;
+                    background-image: url(../images/bg.svg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    z-index: -1;
+                }
+
+                .mark {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    display: block;
+                }
             }
         }
 
         .grid-block {
+            grid-template-columns: repeat(2, 1fr);
+
             .block {
                 &:hover {
                     h3 {}
@@ -1124,10 +1195,18 @@ section {}
                 }
 
                 .banners {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: nowrap;
+
                     .banner {
                         &:first-of-type {}
 
                         &.big {
+                            // min-height: 562px;
+                            padding: 80px 40px 40px 40px;
+
                             &::before {}
                         }
 
@@ -1149,12 +1228,15 @@ section {}
             }
 
             .products-wrapper {
+
                 .most-selled {
                     h2 {
                         &::before {}
                     }
 
                     .grid-block {
+                        grid-template-columns: repeat(1, 1fr);
+
                         .product {
                             &:hover {
                                 .text {
@@ -1165,6 +1247,8 @@ section {}
                             img {}
 
                             .text {
+                                width: calc(100% - 100px);
+
                                 h3 {}
 
                                 span {}
@@ -1176,6 +1260,8 @@ section {}
 
                     .sorting-section {
                         .select-block {
+                            flex-wrap: wrap;
+
                             .select-item {
                                 .item-text {
 
@@ -1204,7 +1290,11 @@ section {}
                 }
 
                 .grid-block {
+                    grid-template-columns: repeat(2, 1fr);
+
                     .block {
+                        display: none;
+
                         h3 {}
 
                         p {}
@@ -1212,9 +1302,16 @@ section {}
                 }
 
                 .pagination {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    flex-wrap: nowrap;
+
                     .btn {}
 
                     .pages {
+                        margin-bottom: 15px;
+
                         .first {}
 
                         .last {}
@@ -1420,6 +1517,8 @@ section {}
         .flex-block {
             .gallery {
                 .selected-img {
+                    height: 430px;
+
                     .loading {
                         &.hide {}
                     }
@@ -1440,7 +1539,9 @@ section {}
                         img {}
                     }
 
-                    .logo {}
+                    .logo {
+                        max-width: 80px;
+                    }
 
                     .zoom-logo {
                         img {}
@@ -1564,7 +1665,22 @@ section {}
                         }
 
                         &.send-holder {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+                            justify-content: flex-start;
+                            flex-wrap: nowrap;
+                            padding: 15px;
+
                             .price-holder {
+                                margin-bottom: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                justify-content: flex-start;
+                                flex-wrap: nowrap;
+                                text-align: right;
+
                                 span {
                                     &.new {}
 
@@ -1626,6 +1742,8 @@ section {}
                 span {}
 
                 &.active {
+                    border-bottom-color: @grey-7;
+
                     span {}
                 }
             }
@@ -1709,8 +1827,17 @@ section {}
                 }
 
                 .btn-holder {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-wrap: nowrap;
+
                     .btn {
-                        &:first-of-type {}
+                        &:first-of-type {
+                            margin-right: 0;
+                            margin-bottom: 20px;
+                        }
                     }
                 }
 
@@ -1747,33 +1874,75 @@ section {}
                 }
             }
 
-            &.geometry {}
+            &.geometry {
+                .flex-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-wrap: nowrap;
+                }
+            }
 
             .img {
+                width: 100%;
+                max-width: 100%;
+
                 img {}
             }
 
-            table {
-                thead {
-                    tr {
-                        th {
-                            &:last-of-type {}
-                        }
-                    }
+            .table-holder {
+                display: flex;
+                overflow-y: hidden;
+                overflow-x: auto;
+                width: 100%;
+
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    height: 5px;
+                    background-color: @orange-1-25;
                 }
 
-                tbody {
-                    tr {
-                        &:nth-of-type(odd) {}
+                &::-webkit-scrollbar-track {
+                    border-radius: 4px;
+                    background-color: @orange-1-25;
+                }
 
-                        td {
-                            &:first-of-type {}
+                &::-webkit-scrollbar-thumb {
+                    background: @orange-1;
+                    border-radius: 10px;
+                }
 
-                            &:last-of-type {}
+                &::-webkit-scrollbar-corner {
+                    display: none;
+                }
+
+                table {
+                    width: 730px;
+                    min-width: 730px;
+
+                    thead {
+                        tr {
+                            th {
+                                &:last-of-type {}
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            &:nth-of-type(odd) {}
+
+                            td {
+                                &:first-of-type {}
+
+                                &:last-of-type {}
+                            }
                         }
                     }
                 }
             }
+
 
             &.active {}
         }
@@ -2231,7 +2400,10 @@ section {}
                             &::before {}
                         }
 
-                        input {}
+                        input {
+                            width: 100%;
+                            max-width: calc(100% - 105px);
+                        }
 
                         button {
                             &:hover {}
@@ -2551,9 +2723,23 @@ section {}
 
         .grid-block {
             .block {
-                h3 {}
+                h3 {
+                    img {
+                        display: inline;
+
+                        &.active {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
 
                 ul {
+                    display: none;
+
+                    &.active {
+                        display: flex;
+                    }
+
                     li {
                         &::before {}
 

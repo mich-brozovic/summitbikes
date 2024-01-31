@@ -242,7 +242,7 @@ jQuery(document).ready(function ($) {
     });
     $(document).ready(function () {
         const mostSelled = $(".products-wrapper .most-selled .grid-block");
-
+        const windowWidth = $(window).width();
         if (mostSelled.length) {
             const products = mostSelled.find(".product");
             const hiddenProducts = products.slice(3);
@@ -484,7 +484,6 @@ jQuery(document).ready(function ($) {
     });
 
     $(document).ready(() => {
-        // Funkce pro nastavení výšky .img stejnou jako jejich šířka
         const setHeightEqualToWidth = () => {
             $('.product-item .img').each((index, element) => {
                 const width = $(element).width();
@@ -492,14 +491,13 @@ jQuery(document).ready(function ($) {
             });
         };
 
-        // Inicializace výšky při načítání stránky
         setHeightEqualToWidth();
 
-        // Reakce na změnu velikosti okna
-        $(window).on('resize', () => {
+        $(window).on('resize orientationchange', () => {
             setHeightEqualToWidth();
         });
     });
+
 
     $(document).on("click", ".hamburger", function (e) {
         e.preventDefault();
@@ -508,11 +506,22 @@ jQuery(document).ready(function ($) {
         $("html").addClass("remove")
     });
 
-    $(document).on("click", "#close-header", function (e) {
+    $(document).on("click", ".close", function (e) {
         e.preventDefault();
         $(".mobile-navigation").removeClass("active");
         $(".bg-nav").removeClass("active");
         $("html").removeClass("remove")
+        $(".filtering-holder").removeClass("active");
+    });
+    $(document).on("click", "#filtration-active", function (e) {
+        e.preventDefault();
+        $(".filtering-holder").addClass("active");
+        $("html").addClass("remove")
+    });
+    $(document).on("click", ".filtering-holder .bg", function (e) {
+        e.preventDefault();
+        $("html").removeClass("remove")
+        $(".filtering-holder").removeClass("active");
     });
     $(document).on("click", ".bg-nav", function (e) {
         e.preventDefault();
@@ -525,6 +534,7 @@ jQuery(document).ready(function ($) {
             $(".mobile-navigation").removeClass("active");
             $(".bg-nav").removeClass("active");
             $("html").removeClass("remove");
+            $(".filtering-holder").removeClass("active");
         }
     });
 
@@ -569,5 +579,24 @@ jQuery(document).ready(function ($) {
             window.location.href = link;
         }
     });
+    $(document).ready(function () {
+        const holder = $(document).find("#images-holder");
+        const wrapper = holder.find(".wrapper");
+        let imgCount = wrapper.find(".img").length;
 
+        wrapper.width(imgCount * (110 + 12));
+    });
+
+
+    $(document).on("click", ".link-part .grid-block .block .menu-title", function (e) {
+        const t = $(this);
+        const windowWidth = $(window).width();
+        const img = t.find("img");
+        const b = t.closest(".block");
+        const ul = b.find("ul");
+        if (windowWidth < 768) {
+            img.toggleClass("active");
+            ul.toggleClass("active");
+        }
+    });
 });

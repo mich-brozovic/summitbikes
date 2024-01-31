@@ -4,6 +4,7 @@
         <div class="container">
             <div class="title-holder">
                 <img class="bg" src="data/images/sub-cat-main.jpg" alt="">
+                <img src="data/images/kat-min.jpg" alt="" class="min">
                 <div class="text-block">
                     <h2 class="mark">Jízdní kola</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -194,7 +195,7 @@
                 <div class="products-wrapper">
                     <div class="filtration-button" id="filtration-active">
                         <span>Filtrace</span>
-                        
+
                     </div>
                     <div class="most-selled">
                         <h2 class="mark small">NEJPRODÁVÁNĚJŠÍ</h2>

@@ -36,18 +36,19 @@
                         <div class="loading"><img src="data/images/loading.svg" alt=""></div>
                     </div>
                     <div class="images-holder" id="images-holder">
-                        <div class="img">
-                            <img src="data/images/detail-1.jpg" alt="">
+                        <div class="wrapper">
+                            <div class="img"><img src="data/images/detail-1.jpg" alt=""></div>
+                            <div class="img"><img src="data/images/bike-1.jpg" alt=""></div>
+                            <div class="img"><img src="data/images/bike-2.jpg" alt=""></div>
+                            <div class="img"><img src="data/images/bike-3.jpg" alt=""></div>
+                            <div class="img"><img src="data/images/bike-1.jpg" alt=""></div>
+                            <div class="img"><img src="data/images/bike-2.jpg" alt=""></div>
+                            <div class="img"><img src="data/images/bike-3.jpg" alt=""></div>
+                            <div class="img"><img src="data/images/bike-1.jpg" alt=""></div>
+                            <div class="img"><img src="data/images/bike-2.jpg" alt=""></div>
+                            <div class="img"><img src="data/images/bike-3.jpg" alt=""></div>
                         </div>
-                        <div class="img"><img src="data/images/bike-1.jpg" alt=""></div>
-                        <div class="img"><img src="data/images/bike-2.jpg" alt=""></div>
-                        <div class="img"><img src="data/images/bike-3.jpg" alt=""></div>
-                        <div class="img"><img src="data/images/bike-1.jpg" alt=""></div>
-                        <div class="img"><img src="data/images/bike-2.jpg" alt=""></div>
-                        <div class="img"><img src="data/images/bike-3.jpg" alt=""></div>
-                        <div class="img"><img src="data/images/bike-1.jpg" alt=""></div>
-                        <div class="img"><img src="data/images/bike-2.jpg" alt=""></div>
-                        <div class="img"><img src="data/images/bike-3.jpg" alt=""></div>
+
                     </div>
                 </div>
                 <div class="texts">
@@ -161,7 +162,7 @@
                 <div class="switcher" id="detail"><span>Detailní popis</span></div>
                 <div class="switcher" id="geometry"><span>Geometrie</span></div>
                 <div class="switcher" id="geometry"><span>Tabulka velikostí</span></div>
-                <div class="switcher" id="reviews"><span>Hodnocení</span><span class="quantity">15</span></div>
+                <div class="switcher" id="reviews"><span>Hodnocení</span><span class="quantity">(15)</span></div>
             </div>
             <div class="content-part specifications active" data-target="specifications">
                 <h3>Specifikace</h3>
@@ -250,95 +251,99 @@
                 <h3>Geometrie</h3>
                 <div class="flex-wrapper">
                     <div class="img"><img src="data/images/geometry.jpg" alt=""></div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>XS</th>
-                                <th>S</th>
-                                <th>M</th>
-                                <th>L</th>
-                                <th>XL</th>
+                    <div class="table-holder">
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>A - Výška sedla v MM</td>
-                                <td>605 - 731</td>
-                                <td>663 - 798</td>
-                                <td>708 -843</td>
-                                <td>743 - 878</td>
-                                <td>783 - 918</td>
-                            </tr>
-                            <tr>
-                                <td>B - Uhel hlavové trubky</td>
-                                <td>67°</td>
-                                <td>663 - 798</td>
-                                <td>708 -843</td>
-                                <td>743 - 878</td>
-                                <td>783 - 918</td>
-                            </tr>
-                            <tr>
-                                <td>C - Rozovr kol v mm</td>
-                                <td>605 - 731</td>
-                                <td>663 - 798</td>
-                                <td>708 -843</td>
-                                <td>743 - 878</td>
-                                <td>783 - 918</td>
-                            </tr>
-                            <tr>
-                                <td>D - Výška v CM</td>
-                                <td>605</td>
-                                <td>663 - 798</td>
-                                <td>708 -843</td>
-                                <td>743 - 878</td>
-                                <td>783 - 918</td>
-                            </tr>
-                            <tr>
-                                <td>E - Výška sedla v MM</td>
-                                <td>731</td>
-                                <td>663 - 798</td>
-                                <td>708 -843</td>
-                                <td>743 - 878</td>
-                                <td>783 - 918</td>
-                            </tr>
-                            <tr>
-                                <td>F - Uhel hlavové trubky</td>
-                                <td>731</td>
-                                <td>663 - 798</td>
-                                <td>708 -843</td>
-                                <td>743 - 878</td>
-                                <td>783 - 918</td>
-                            </tr>
 
-                            <tr>
-                                <td>G - Rozovr kol v mm</td>
-                                <td>605 - 731</td>
-                                <td>663 - 798</td>
-                                <td>708 -843</td>
-                                <td>743 - 878</td>
-                                <td>783 - 918</td>
-                            </tr>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>XS</th>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>L</th>
+                                    <th>XL</th>
 
-                            <tr>
-                                <td>H -Uhel hlavové trubky</td>
-                                <td>605 - 731</td>
-                                <td>663 - 798</td>
-                                <td>708 -843</td>
-                                <td>743 - 878</td>
-                                <td>783 - 918</td>
-                            </tr>
-                            <tr>
-                                <td>I -Rozovr kol v mm</td>
-                                <td>605 - 731</td>
-                                <td>663 - 798</td>
-                                <td>708 -843</td>
-                                <td>743 - 878</td>
-                                <td>783 - 918</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A - Výška sedla v MM</td>
+                                    <td>605 - 731</td>
+                                    <td>663 - 798</td>
+                                    <td>708 -843</td>
+                                    <td>743 - 878</td>
+                                    <td>783 - 918</td>
+                                </tr>
+                                <tr>
+                                    <td>B - Uhel hlavové trubky</td>
+                                    <td>67°</td>
+                                    <td>663 - 798</td>
+                                    <td>708 -843</td>
+                                    <td>743 - 878</td>
+                                    <td>783 - 918</td>
+                                </tr>
+                                <tr>
+                                    <td>C - Rozovr kol v mm</td>
+                                    <td>605 - 731</td>
+                                    <td>663 - 798</td>
+                                    <td>708 -843</td>
+                                    <td>743 - 878</td>
+                                    <td>783 - 918</td>
+                                </tr>
+                                <tr>
+                                    <td>D - Výška v CM</td>
+                                    <td>605</td>
+                                    <td>663 - 798</td>
+                                    <td>708 -843</td>
+                                    <td>743 - 878</td>
+                                    <td>783 - 918</td>
+                                </tr>
+                                <tr>
+                                    <td>E - Výška sedla v MM</td>
+                                    <td>731</td>
+                                    <td>663 - 798</td>
+                                    <td>708 -843</td>
+                                    <td>743 - 878</td>
+                                    <td>783 - 918</td>
+                                </tr>
+                                <tr>
+                                    <td>F - Uhel hlavové trubky</td>
+                                    <td>731</td>
+                                    <td>663 - 798</td>
+                                    <td>708 -843</td>
+                                    <td>743 - 878</td>
+                                    <td>783 - 918</td>
+                                </tr>
+
+                                <tr>
+                                    <td>G - Rozovr kol v mm</td>
+                                    <td>605 - 731</td>
+                                    <td>663 - 798</td>
+                                    <td>708 -843</td>
+                                    <td>743 - 878</td>
+                                    <td>783 - 918</td>
+                                </tr>
+
+                                <tr>
+                                    <td>H -Uhel hlavové trubky</td>
+                                    <td>605 - 731</td>
+                                    <td>663 - 798</td>
+                                    <td>708 -843</td>
+                                    <td>743 - 878</td>
+                                    <td>783 - 918</td>
+                                </tr>
+                                <tr>
+                                    <td>I -Rozovr kol v mm</td>
+                                    <td>605 - 731</td>
+                                    <td>663 - 798</td>
+                                    <td>708 -843</td>
+                                    <td>743 - 878</td>
+                                    <td>783 - 918</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <!-- <div class="content-part sizes-table" data-target="sizes-table">
@@ -377,28 +382,28 @@
                             <span>4</span>
                             <div class="star full"></div>
                             <div class="bar">
-                                <div class="progress"style="width: 30%;"></div>
+                                <div class="progress" style="width: 30%;"></div>
                             </div>
                         </div>
                         <div class="rate">
                             <span>3</span>
                             <div class="star full"></div>
                             <div class="bar">
-                                <div class="progress"style="width: 5%;"></div>
+                                <div class="progress" style="width: 5%;"></div>
                             </div>
                         </div>
                         <div class="rate">
                             <span>2</span>
                             <div class="star full"></div>
                             <div class="bar">
-                                <div class="progress"style="width: 2%;"></div>
+                                <div class="progress" style="width: 2%;"></div>
                             </div>
                         </div>
                         <div class="rate">
                             <span>1</span>
                             <div class="star full"></div>
                             <div class="bar">
-                                <div class="progress"style="width: 3%;"></div>
+                                <div class="progress" style="width: 3%;"></div>
                             </div>
                         </div>
 
