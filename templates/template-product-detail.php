@@ -75,21 +75,8 @@
                     </div>
                     <a href="" class="link">Jak správně vybrat velikost</a>
                     <form action="" class="add-to-basket" id="to-basket">
-                        <div class="form-holder colors">
-                            <input value="color-1" type="radio" name="color" id="color-1" required>
-                            <label for="color-1" style="background-color: #00ACFF;"><span></span></label>
-                            <input value="color-2" type="radio" name="color" id="color-2">
-                            <label for="color-2" style="background-color: #3F9532;"><span></span></label>
-                            <input value="color-3" type="radio" name="color" id="color-3">
-                            <label for="color-3" style="background-color: #001AFF;"><span></span></label>
-                            <input value="color-4" type="radio" name="color" id="color-4">
-                            <label for="color-4" style="background-color: #FF0000;"><span></span></label>
-                            <input value="color-5" type="radio" name="color" id="color-5">
-                            <label for="color-5" style="background-color: #F7A400;"><span></span></label>
-                            <input value="color-6" type="radio" name="color" id="color-6">
-                            <label for="color-6" style="background-color: #D99000;"><span></span></label>
-                        </div>
-                        <div class="form-holder sizes-holder-form">
+                        
+                        <div class="form-holder sizes-holder-form" id="size">
                             <input class="input-btn" type="radio" value="size-xs" name="size" id="size-xs" required>
                             <label class="radio-label" for="size-xs">XS</label>
                             <input class="input-btn" type="radio" value="size-s" name="size" id="size-s">

@@ -369,21 +369,30 @@ jQuery(document).ready(function ($) {
     });
 
     $(document).on("click", "#send-form", function (e) {
-        if ($("input[name='size']").is(":checked")) {
-            $('#size-error').css('display', 'none');
-        } else {
-            e.preventDefault();
-            $('#size-error').css('display', 'block');
-        };
-
-        if ($("input[name='color']").is(":checked")) {
-            $('#color-error').css('display', 'none');
-        } else {
-            e.preventDefault();
-            $('#color-error').css('display', 'block');
-        };
+        const colorHolder = $(document).find("#color");
+    
+        if (colorHolder.length > 0) { // Ověření existence elementu
+            const color = colorHolder.find("input[name='color']");
+            if (color.is(":checked")) {
+                $('#color-error').css('display', 'none');
+            } else {
+                e.preventDefault();
+                $('#color-error').css('display', 'block');
+            };
+        }
+    
+        const sizeHolder = $(document).find("#size");
+        if (sizeHolder.length > 0) { // Ověření existence elementu
+            const size = sizeHolder.find("input[name='size']");
+            if (size.is(":checked")) {
+                $('#size-error').css('display', 'none');
+            } else {
+                e.preventDefault();
+                $('#size-error').css('display', 'block');
+            };
+        }
     });
-
+    
     $(document).on("click", ".switcher", function (e) {
         e.preventDefault();
         const mainBlock = $(document).find(".descriptions");
