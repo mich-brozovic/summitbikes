@@ -4142,6 +4142,65 @@ section {
                     }
                 }
 
+                .btn-holder {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    a {
+                        display: flex;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+
+                        &:last-of-type {
+                            margin: 0;
+                        }
+
+                        &.compare {
+                            span {
+                                &:before {
+                                    background-image: url(../images/Compare.svg);
+                                }
+                            }
+                        }
+
+                        &.share {
+                            span {
+                                &:before {
+                                    background-image: url(../images/Share.svg);
+                                }
+                            }
+                        }
+
+                        span {
+                            .font-regular-montserrat();
+                            font-size: 1.6rem;
+                            line-height: 1.5em;
+                            color: @grey-2;
+                            padding: 10px 10px 10px 44px;
+                            background-color: @white;
+                            border: 1px solid @grey-7;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                left: 10px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                width: 24px;
+                                height: 24px;
+                                display: block;
+                                position: absolute;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;
+                            }
+                        }
+                    }
+                }
+
                 .add-to-basket {
                     width: 100%;
 
@@ -4152,7 +4211,7 @@ section {
                         align-self: center;
                         text-align: center;
                         align-items: center;
-
+                        margin-bottom: 10px;
 
 
 
