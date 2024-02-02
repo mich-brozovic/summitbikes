@@ -136,14 +136,610 @@
                     <nav aria-label="Navigace kategorií" id="categories">
                         <h2 class="screenReaderElement">Navigace kategorií</h2>
                         <ul>
-                            <li><a href="">Jízdní kola</a></li>
-                            <li><a href="">Cyklo oblečení</a></li>
-                            <li><a href="">Cyklo obuv</a></li>
-                            <li><a href="">Cyklo vybavení</a></li>
-                            <li><a href="">Cyklistické doplňky</a></li>
-                            <li><a href="">Cyklo komponenty</a></li>
-                            <li><a href="">Sportovní výživa</a></li>
-                            <li><a href="">Značky</a></li>
+                            <li><a href="https://cssgradient.io/" class="main-link">Jízdní kola <div class="arrow arrow-main"><img src="data/images/arrow-black-small.svg" alt="" /></div></a>
+
+                                <div class="categories-navigation ">
+                                    <div class="bg-categroy"></div>
+                                    <div class="holder">
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+
+                                                <span>Horská kola <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                    <li><a href="" class="child">dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                    <li><a href="" class="child">Dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Silniční kola <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                    <li><a href="" class="child">dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                    <li><a href="" class="child">Dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Gravel kola <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                    <li><a href="" class="child">dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                    <li><a href="" class="child">Dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Městská kola <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                    <li><a href="" class="child">dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                    <li><a href="" class="child">Dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Elektrokola <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                    <li><a href="" class="child">dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                    <li><a href="" class="child">Dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                </ul> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="https://cssgradient.io/" class="main-link">Cyklistické oblečení <div class="arrow arrow-main"><img src="data/images/arrow-black-small.svg" alt="" /></div></a>
+
+                                <div class="categories-navigation ">
+                                    <div class="bg-categroy"></div>
+                                    <div class="holder">
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Pánské <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Dresy</a></li>
+                                                <li><a href="" class="child">Šortky</a></li>
+                                                <li><a href="" class="child">Kalhoty</a></li>
+                                                <li><a href="" class="child">Bundy</a></li>
+                                                <li><a href="" class="child">Vesty</a></li>
+                                                <li><a href="" class="child">Rukavice</a></li>
+                                                <li><a href="" class="child">Ponožky</a></li>
+                                                <li><a href="" class="child">Termoprádlo</a></li>
+                                                <li><a href="" class="child">Spodní prádlo</a></li>
+                                                <li><a href="" class="child">Návleky</a></li>
+                                                <li><a href="" class="child">Doplňky</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Dámské <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Dresy</a></li>
+                                                <li><a href="" class="child">Šortky</a></li>
+                                                <li><a href="" class="child">Kalhoty</a></li>
+                                                <li><a href="" class="child">Bundy</a></li>
+                                                <li><a href="" class="child">Vesty</a></li>
+                                                <li><a href="" class="child">Rukavice</a></li>
+                                                <li><a href="" class="child">Ponožky</a></li>
+                                                <li><a href="" class="child">Termoprádlo</a></li>
+                                                <li><a href="" class="child">Spodní prádlo</a></li>
+                                                <li><a href="" class="child">Návleky</a></li>
+                                                <li><a href="" class="child">Doplňky</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Dětské <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Dresy</a></li>
+                                                <li><a href="" class="child">Šortky</a></li>
+                                                <li><a href="" class="child">Kalhoty</a></li>
+                                                <li><a href="" class="child">Bundy</a></li>
+                                                <li><a href="" class="child">Vesty</a></li>
+                                                <li><a href="" class="child">Rukavice</a></li>
+                                                <li><a href="" class="child">Ponožky</a></li>
+                                                <li><a href="" class="child">Termoprádlo</a></li>
+                                                <li><a href="" class="child">Návleky</a></li>
+                                                <li><a href="" class="child">Doplňky</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="https://cssgradient.io/" class="main-link">Cyklistická obuv <div class="arrow arrow-main"><img src="data/images/arrow-black-small.svg" alt="" /></div></a>
+
+                                <div class="categories-navigation ">
+                                    <div class="bg-categroy"></div>
+                                    <div class="holder">
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Pánská <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                    <li><a href="" class="child">dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                    <li><a href="" class="child">Dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Dámská <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                    <li><a href="" class="child">dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                    <li><a href="" class="child">Dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Dětské <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                    <li><a href="" class="child">dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                    <li><a href="" class="child">Dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Doplňky <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                    <li><a href="" class="child">dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                    <li><a href="" class="child">Dlouhý rukáv</a></li>
+                                                    <li><a href="" class="child">Krátký rukáv</a></li>
+                                                </ul> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="https://cssgradient.io/" class="main-link">Cyklistické vybavení <div class="arrow arrow-main"><img src="data/images/arrow-black-small.svg" alt="" /></div></a>
+
+                                <div class="categories-navigation ">
+                                    <div class="bg-categroy"></div>
+                                    <div class="holder">
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Batohy na kolo <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Batohy</a></li>
+                                                <li><a href="" class="child">Ledvinky</a></li>
+                                                <li><a href="" class="child">Rezervoáry a příslušenství</a></li>
+                                                <li><a href="" class="child">Voděodolné vaky</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Chrániče na kolo <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Kolenní chrániče</a></li>
+                                                <li><a href="" class="child">Loketní chrániče</a></li>
+                                                <li><a href="" class="child">Chrániče páteře a hrudníku</a></li>
+                                                <li><a href="" class="child">Holenní chrániče</a></li>
+                                                <li><a href="" class="child">Návleky</a></li>
+                                                <li><a href="" class="child">Dětské chrániče</a></li>
+                                                <li><a href="" class="child">Batohy s chráničem</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Helmy <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">MTB, enduro přilby</a></li>
+                                                <li><a href="" class="child">Downhill, freeride přilby</a></li>
+                                                <li><a href="" class="child">Silniční přilby</a></li>
+                                                <li><a href="" class="child">BMX přilby</a></li>
+                                                <li><a href="" class="child">Dětské přilby</a></li>
+                                                <li><a href="" class="child">Doplňky</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Brýle <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Cyklistické brýle</a></li>
+                                                <li><a href="" class="child">Sjezdové brýle</a></li>
+                                                <li><a href="" class="child">Lifestyle brýle</a></li>
+                                                <li><a href="" class="child">Dětské brýle</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Stany, spacáky, karimatky <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Stany</a></li>
+                                                <li><a href="" class="child">Spací pytle</a></li>
+                                                <li><a href="" class="child">Karimatky</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="https://cssgradient.io/" class="main-link">Cyklo komponenty <div class="arrow arrow-main"><img src="data/images/arrow-black-small.svg" alt="" /></div></a>
+
+                                <div class="categories-navigation ">
+                                    <div class="bg-categroy"></div>
+                                    <div class="holder">
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>ŘÍZENÍ <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">omotávky</a></li>
+                                                <li><a href="" class="child">gripy</a></li>
+                                                <li><a href="" class="child">řídítka</a></li>
+                                                <li><a href="" class="child">představce</a></li>
+                                                <li><a href="" class="child">rohy</a></li>
+                                                <li><a href="" class="child">příslušenství (koncovky, zrcátka, zvonky)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>BRZDY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">destičky</a></li>
+                                                <li><a href="" class="child">špalíky a gumičky</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>PEDÁLY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">nášlapné</a></li>
+                                                <li><a href="" class="child">platformy</a></li>
+                                                <li><a href="" class="child">příslušenství (kufry, díly)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>SEDLA A SEDLOVKY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">teleskopické sedlovky</a></li>
+                                                <li><a href="" class="child">pevné sedlovky</a></li>
+                                                <li><a href="" class="child">sedla</a></li>
+                                                <li><a href="" class="child">příslušenství (zámky, potahy, objímky)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>RÁFKY, PLÁŠTĚ, DUŠE <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">ráfky</a></li>
+                                                <li><a href="" class="child">pláště a galusky</a></li>
+                                                <li><a href="" class="child">duše a bezdušová řešení</a></li>
+                                                <li><a href="" class="child">příslušenství (ventilky, těsnení)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>ŘETĚZY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">12</a></li>
+                                                <li><a href="" class="child">11</a></li>
+                                                <li><a href="" class="child">10</a></li>
+                                                <li><a href="" class="child">9</a></li>
+                                                <li><a href="" class="child">Příslušenství</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="https://cssgradient.io/" class="main-link">Cyklo příslušenství <div class="arrow arrow-main"><img src="data/images/arrow-black-small.svg" alt="" /></div></a>
+
+                                <div class="categories-navigation ">
+                                    <div class="bg-categroy"></div>
+                                    <div class="holder">
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>BLATNÍKY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                            </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>BRAŠNY, VAKY A OBALY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">brašny na nosič</a></li>
+                                                <li><a href="" class="child">brašny na rám</a></li>
+                                                <li><a href="" class="child">brašny na řidítka</a></li>
+                                                <li><a href="" class="child">brašny na sedlovku</a></li>
+                                                <li><a href="" class="child">držáky a pouzdra na mobil</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>COMPUTERY A GPS <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">tachometry</a></li>
+                                                <li><a href="" class="child">GPS</a></li>
+                                                <li><a href="" class="child">držáky</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>OSVĚTLENÍ <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">přední světla</a></li>
+                                                <li><a href="" class="child">zadní světla</a></li>
+                                                <li><a href="" class="child">sety přední + zadní světlo</a></li>
+                                                <li><a href="" class="child">celovky</a></li>
+                                                <li><a href="" class="child">reflexní prvky</a></li>
+                                                <li><a href="" class="child">držáky na světla</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>PUMPY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Ruční pumpičky</a></li>
+                                                <li><a href="" class="child">Pumpy stojanové</a></li>
+                                                <li><a href="" class="child">Hustilky C02</a></li>
+                                                <li><a href="" class="child">Pumpy na vidlice a tlumiče</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>NOSIČE A DRŽÁKY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">stojany a držáky</a></li>
+                                                <li><a href="" class="child">nosiče na kolo</a></li>
+                                                <li><a href="" class="child">přepravní koše</a></li>
+                                                <li><a href="" class="child">strojánky na kolo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>KOŠÍKY A LÁHVE <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Cyklistické lahve</a></li>
+                                                <li><a href="" class="child">Košíky</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>ZÁMKY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                            </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>DĚTSKÉ SEDAČKY <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <!-- <ul>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                                <li><a href="" class="child"></a></li>
+                                            </ul> -->
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>SERVIS, NÁŘADÍ <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">montážní stojany</a></li>
+                                                <li><a href="" class="child">maziva a oleje</a></li>
+                                                <li><a href="" class="child">nářadí a lepení</a></li>
+                                                <li><a href="" class="child">bowdeny a lanka</a></li>
+                                                <li><a href="" class="child">příslušenství (koncovky)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>CYKLOKOSMETIKA <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">odmašťovače</a></li>
+                                                <li><a href="" class="child">čístící prostředky</a></li>
+                                                <li><a href="" class="child">ochranné fólie</a></li>
+                                                <li><a href="" class="child">kartáče</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="https://cssgradient.io/" class="main-link">Sportovní výživa <div class="arrow arrow-main"><img src="data/images/arrow-black-small.svg" alt="" /></div></a>
+
+                                <div class="categories-navigation ">
+                                    <div class="bg-categroy"></div>
+                                    <div class="holder">
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Rychlá energie <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Energetické tyčinky</a></li>
+                                                <li><a href="" class="child">Gely a bombóny</a></li>
+                                                <li><a href="" class="child">Iontové nápoje</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Bílkoviny a zdravá výživa <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Proteinové tyčinky</a></li>
+                                                <li><a href="" class="child">Sušené maso</a></li>
+                                                <li><a href="" class="child">Proteinové nápoje</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category">
+                                            <a href="" class="icon">
+                                                <div class="img">
+                                                    <img src="data/images/sub-1.jpg" alt="" />
+                                                </div>
+                                                <span>Doplňky stravy <div class="arrow child-arrow"><img src="data/images/arrow-black-small.svg" alt="" /></div></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="" class="child">Aminokyseliny/BCAA</a></li>
+                                                <li><a href="" class="child">Vitamíny</a></li>
+                                                <li><a href="" class="child">Kreatiny</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>

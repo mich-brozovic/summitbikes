@@ -44,6 +44,7 @@ $(window).scroll(function () {
 
     if (st > lastScrollTop) {
         $('#header').addClass('hide');
+
     } else {
         $('#header').removeClass('hide');
     }
@@ -120,6 +121,7 @@ jQuery(document).ready(function ($) {
             });
         }
     });
+
     $(document).ready(() => {
         const gall = $("#detail-gallery");
         if (gall.length > 0) {
@@ -370,7 +372,7 @@ jQuery(document).ready(function ($) {
 
     $(document).on("click", "#send-form", function (e) {
         const colorHolder = $(document).find("#color");
-    
+
         if (colorHolder.length > 0) { // Ověření existence elementu
             const color = colorHolder.find("input[name='color']");
             if (color.is(":checked")) {
@@ -380,7 +382,7 @@ jQuery(document).ready(function ($) {
                 $('#color-error').css('display', 'block');
             };
         }
-    
+
         const sizeHolder = $(document).find("#size");
         if (sizeHolder.length > 0) { // Ověření existence elementu
             const size = sizeHolder.find("input[name='size']");
@@ -392,7 +394,7 @@ jQuery(document).ready(function ($) {
             };
         }
     });
-    
+
     $(document).on("click", ".switcher", function (e) {
         e.preventDefault();
         const mainBlock = $(document).find(".descriptions");
@@ -544,6 +546,15 @@ jQuery(document).ready(function ($) {
             $(".bg-nav").removeClass("active");
             $("html").removeClass("remove");
             $(".filtering-holder").removeClass("active");
+            if ($(".categories-navigation").hasClass("active-hov") || $(".category").hasClass("seen")) {
+
+                $(".category").removeClass("seen");
+                setTimeout(function () {
+                    $(".categories-navigation").removeClass("active-hov");
+                    $(".main-link").removeClass("active");
+                }, 300);
+
+            }
         }
     });
 
@@ -608,4 +619,84 @@ jQuery(document).ready(function ($) {
             ul.toggleClass("active");
         }
     });
+
+
+    $(".main-link").click(function (event) {
+        event.preventDefault();
+        const cats = $(this).closest("li").find(".categories-navigation");
+        const cat = cats.find(".category");
+        const t = $(this);
+        // const arrow = $(this).find(".arrow");¨
+
+        $('.main-link').not(this).removeClass('active');
+        $('.categories-navigation').not($(this).closest("li").find(".categories-navigation")).removeClass('active-hov');
+        $('.category').not($(this).closest("li").find(".category")).removeClass('seen');
+
+        if (cats.length > 0) {
+            if (!cats.hasClass("active-hov")) {
+                t.addClass("active");
+                cats.addClass("active-hov");
+
+                setTimeout(function () {
+
+                    $(cat).addClass('seen');
+                }, 400);
+                // arrow.addClass("rotated");
+            } else {
+                window.location.href = $(this).attr("href");
+            }
+        } else {
+            window.location.href = $(this).attr("href");
+        }
+    });
+
+    $(".bg-categroy").click(function (e) {
+        if ($(".categories-navigation").hasClass("active-hov") || $(".category").hasClass("seen")) {
+
+            $(".category").removeClass("seen");
+            setTimeout(function () {
+                $(".categories-navigation").removeClass("active-hov");
+                $(".main-link").removeClass("active");
+            }, 300);
+
+        }
+    });
+    let lastScrollTop = 50;
+    $(window).scroll(function (event) {
+        const st = $(this).scrollTop();
+        const cats = $(document).find(".categories-navigation");
+        const cat = cats.find(".category");
+
+        if (st > lastScrollTop) {
+            if ($(".categories-navigation").hasClass("active-hov") || $(".category").hasClass("seen")) {
+
+                $(".category").removeClass("seen");
+                setTimeout(function () {
+                    $(".categories-navigation").removeClass("active-hov");
+                    $(".main-link").removeClass("active");
+                }, 300);
+            }
+        } else {
+            if ($(".categories-navigation").hasClass("active-hov") || $(".category").hasClass("seen")) {
+
+                $(".category").removeClass("seen");
+                setTimeout(function () {
+                    $(".categories-navigation").removeClass("active-hov");
+                    $(".main-link").removeClass("active");
+                }, 300);
+            };
+        }
+        lastScrollTop = st;
+    });
+    // $(document).on("click", ".faq-switcher", function (e) {
+    //     e.preventDefault();
+    //     const mainBlock = $(this).closest(".faq");
+    //     const id = $(this).attr("id");
+
+    //     $(this).closest('.faq-switcher').siblings().removeClass('active');
+    //     $(this).closest('.faq-switcher').addClass('active');
+
+    //     mainBlock.find(".content-part[data-target='" + id + "']").addClass("active").siblings().removeClass("active");
+
+    // });
 });
