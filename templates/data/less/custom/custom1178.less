@@ -144,6 +144,36 @@
                         a {
                             &::before {}
                         }
+
+                        .categories-navigation {
+                            .bg-categroy {}
+
+                            &.active-hov {}
+
+                            .holder {
+                                grid-template-columns: repeat(3, 1fr);
+                            }
+
+                            .category {
+
+                                .icon {
+                                    &::before {}
+
+                                    .img {
+                                        img {}
+                                    }
+
+                                    span {}
+                                }
+
+                                ul {
+                                    li {
+                                        .child {}
+                                    }
+                                }
+
+                            }
+                        }
                     }
                 }
             }
@@ -1586,7 +1616,9 @@ section {}
 
             &.geometry {}
 
-            .img {    width: 500px;
+            .img {
+                width: 500px;
+
                 img {}
             }
 
