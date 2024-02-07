@@ -93,6 +93,14 @@ img {
         .category-part {
             .flex-block {
                 padding: 10px 0px;
+
+                ul {
+                    li {
+                        .categories-navigation {
+                            margin-top: 9px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -492,6 +500,68 @@ img {
                     display: none;
                 }
 
+                .upper {
+                    display: none;
+
+                    .dropdown {
+                        position: relative;
+
+                        &:hover {
+                            .t(0.3s);
+
+                            .menu {
+
+                                opacity: 1;
+                                visibility: visible;
+                                z-index: 10;
+                            }
+                        }
+
+                        span {
+                            .font-regular-montserrat();
+                            font-size: 1.6rem;
+                            line-height: 1.5em;
+                            color: @grey-1;
+                            text-transform: uppercase;
+                        }
+
+                        .menu {
+                            .t(0.3s);
+                            opacity: 0;
+                            visibility: hidden;
+                            position: absolute;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: center;
+                            flex-wrap: nowrap;
+                            padding: 5px;
+                            top: calc(100% + 1px);
+                            left: 0px;
+                            background-color: @white;
+                            -webkit-box-shadow: 0px 5px 16px 5px rgba(0, 0, 0, 0.2);
+                            box-shadow: 0px 5px 16px 5px rgba(0, 0, 0, 0.2);
+
+                            a {
+                                .font-regular-montserrat();
+                                font-size: 1.6rem;
+                                line-height: 1.5em;
+                                color: @grey-1;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+
+                .mobile-ul {
+                    display: none;
+                }
+
+                .lower {
+                    display: none;
+                }
+
                 ul {
                     width: 100%;
                     display: flex;
@@ -514,9 +584,11 @@ img {
                         padding-left: 0;
                         position: unset;
 
-                        &.mobile {
+                        &::before {
                             display: none;
                         }
+
+
 
                         &:last-of-type {
                             margin-right: 0;
@@ -525,12 +597,23 @@ img {
                         &:hover {
                             a {
                                 color: @orange-1;
+                            }
 
-                                // &::before {
-                                //     transform: translateX(-50%)scale(1, 1);
-                                // }
+                            .categories-navigation {
+                                .t(0.4s);
+                                transform: translateX(-50%) scale(1, 1);
+
+                                // První animace skončí až po 400ms
+
+                                .holder {
+                                    .category {
+                                        .t(0.3s 400ms); // Animace s zpožděním 300ms
+                                        opacity: 1;
+                                    }
+                                }
                             }
                         }
+
 
                         a {
                             .t(0.3s);
@@ -566,26 +649,28 @@ img {
                             .t(0.4s);
                             position: absolute;
                             left: 50%;
-                            margin-top: 44px;
+                            margin-top: 0px;
                             transform: translateX(-50%) scale(1, 0);
+                            border-top: 1px solid @orange-1-25;
                             transform-origin: top;
                             display: flex;
                             // width: 100%;
-                            max-width: 100%;
+                            margin-top: 19px;
+                            width: calc(100vw - 16px);
                             // -webkit-box-shadow: 6px 0px 16px 4px rgba(0, 0, 0, 0.25);
                             // box-shadow: 6px 0px 16px 4px rgba(0, 0, 0, 0.25);
 
-                            .bg-categroy {
-                                width: 100vw;
-                                height: 100vh;
-                                background-color: transparent;
-                                z-index: 1;
-                                display: block;
-                                position: absolute;
-                                left: 50%;
-                                top: 0;
-                                transform: translateX(-50%);
-                            }
+                            // .bg-categroy {
+                            //     width: 100vw;
+                            //     height: 100vh;
+                            //     background-color: transparent;
+                            //     z-index: 1;
+                            //     display: block;
+                            //     position: absolute;
+                            //     left: 50%;
+                            //     top: 0;
+                            //     transform: translateX(-50%);
+                            // }
 
                             &.active-hov {
                                 .t(0.4s);

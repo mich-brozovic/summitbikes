@@ -54,7 +54,7 @@
                                 <li><a href="">Poradna</a></li>
                                 <li><a href="">O nás</a></li>
                                 <li><a href="">Kontakty</a></li>
-                                <li><a href="" class="compare">Porovnat <span>(2)</span></a></li>
+                                <li class="compare-li"><a href="" class="compare">Porovnat <span>(2)</span></a></li>
                                 <li><a href="" class="login">Přihlášení</a></li>
                             </ul>
                         </nav>
@@ -135,7 +135,34 @@
                 <div class="flex-block">
                     <nav aria-label="Navigace kategorií" id="categories">
                         <h2 class="screenReaderElement">Navigace kategorií</h2>
-                        <ul>
+                        <div class="close" id="close-header">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="upper">
+                            <a href="" class="login">Přihlášení</a>
+                            <div class="dropdown">
+                                <span class="active">CZ <img class="arrow" src="data/images/arrow-black-small.svg" alt=""></span>
+
+                                <div class="menu">
+                                    <a href="#">EN</a>
+                                    <a href="#">DE</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <ul class="mobile-ul">
+                            <li class="mobile"><a href="">Věrnostní program</a></li>
+                            <li class="mobile"><a href="">Blog</a></li>
+                            <li class="mobile"><a href="">Poradna</a></li>
+                            <li class="mobile"><a href="">O nás</a></li>
+                            <li class="mobile"><a href="">Kontakty</a></li>
+                            <li><a href="" class="cat" id="categories-dropdownd">Kategorie <img class="arrow" src="data/images/arrow-black-small.svg" alt=""></a>
+                            </li>
+                        </ul>
+
+
+                        <ul class="mobile-class">
                             <li><a href="https://cssgradient.io/" class="main-link">Jízdní kola <div class="arrow arrow-main"><img src="data/images/arrow-black-small.svg" alt="" /></div></a>
 
                                 <div class="categories-navigation ">
@@ -221,7 +248,7 @@
                                     <div class="bg-categroy"></div>
                                     <div class="holder">
                                         <div class="category">
-                                            <a href="" class="icon">
+                                            <a href="https://cssgradient.io/" class="icon">
                                                 <div class="img">
                                                     <img src="data/images/sub-1.jpg" alt="" />
                                                 </div>
@@ -242,7 +269,7 @@
                                             </ul>
                                         </div>
                                         <div class="category">
-                                            <a href="" class="icon">
+                                            <a href="https://cssgradient.io/" class="icon">
                                                 <div class="img">
                                                     <img src="data/images/sub-1.jpg" alt="" />
                                                 </div>
@@ -263,7 +290,7 @@
                                             </ul>
                                         </div>
                                         <div class="category">
-                                            <a href="" class="icon">
+                                            <a href="https://cssgradient.io/" class="icon">
                                                 <div class="img">
                                                     <img src="data/images/sub-1.jpg" alt="" />
                                                 </div>
@@ -741,6 +768,11 @@
                                 </div>
                             </li>
                         </ul>
+                        <div class="lower">
+                            <a class="phone black" href="tel:+420 566 466 180">566 466 180</a>
+                            <span>Po - Pá: 10:00 - 16:30</span>
+                        </div>
+
                     </nav>
                 </div>
             </div>
